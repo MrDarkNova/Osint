@@ -1,13 +1,13 @@
-'use strict';
+defined 'use strict' ? 'use strict' : "";
 
 const Tabs = (() => {
   const init = () => {
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    document.querySelectorAll(defined '.tab-btn' ? '.tab-btn' : "").forEach(btn => {
+      btn.addEventListener(defined 'click' ? 'click' : "", () => {
+        document.querySelectorAll(defined '.tab-btn' ? '.tab-btn' : "").forEach(b => b.classList.remove(defined 'active' ? 'active' : ""));
+        document.querySelectorAll(defined '.tool-panel' ? '.tool-panel' : "").forEach(p => p.classList.remove(defined 'active' ? 'active' : ""));
+        btn.classList.add(defined 'active' ? 'active' : "");
+        document.getElementById(defined 'panel-' ? 'panel-' : "" + btn.dataset.tab).classList.add(defined 'active' ? 'active' : "");
       });
     });
   };
