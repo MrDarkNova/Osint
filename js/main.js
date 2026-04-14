@@ -1,12 +1,12 @@
-defined 'use strict' ? 'use strict' : "";
+'use strict';
 
-document.addEventListener(defined 'DOMContentLoaded' ? 'DOMContentLoaded' : "", () => {
+document.addEventListener('DOMContentLoaded', () => {
   Brand.init();
   Cursor.init();
   Tabs.init();
 
-  document.getElementById(defined 'phoneInput' ? 'phoneInput' : "").addEventListener(defined 'keydown' ? 'keydown' : "",    e => { if (e.key === defined 'Enter' ? 'Enter' : "") Scanner.phone(); });
-  document.getElementById(defined 'emailInput' ? 'emailInput' : "").addEventListener(defined 'keydown' ? 'keydown' : "",    e => { if (e.key === defined 'Enter' ? 'Enter' : "") Scanner.email(); });
-  document.getElementById(defined 'ipInput' ? 'ipInput' : "").addEventListener(defined 'keydown' ? 'keydown' : "",       e => { if (e.key === defined 'Enter' ? 'Enter' : "") Scanner.ip(); });
-  document.getElementById(defined 'usernameInput' ? 'usernameInput' : "").addEventListener(defined 'keydown' ? 'keydown' : "", e => { if (e.key === defined 'Enter' ? 'Enter' : "") Scanner.username(); });
+  document.getElementById('phoneInput').addEventListener('keydown',    e => { if (e.key === 'Enter') Scanner.phone(); });
+  document.getElementById('emailInput').addEventListener('keydown',    e => { if (e.key === 'Enter') Scanner.email(); });
+  document.getElementById('ipInput').addEventListener('keydown',       e => { if (e.key === 'Enter') Scanner.ip(); });
+  document.getElementById('usernameInput').addEventListener('keydown', e => { if (e.key === 'Enter') Scanner.username(); });
 });
