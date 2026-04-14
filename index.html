@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
+<body><div id="dnLoader"><div class="dn-lname">DARKNOVA</div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div id="dnLoader"><div class="dn-lname">DARKNOVA</div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div id="dnLoader"><div class="dn-lname">DARKNOVA</div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div>
 
 <div class="grid-bg"></div>
 <div class="cursor-dot" id="cursorDot"></div>
@@ -194,5 +194,5 @@
 <script src="js/scanner.js"></script>
 <script src="js/main.js"></script>
 
-</body>
+<script>window.addEventListener("load",function(){setTimeout(function(){var l=document.getElementById("dnLoader");if(l){l.classList.add("dn-hidden");setTimeout(function(){l.style.display="none"},500)}},700)});</script><script>window.addEventListener("load",function(){setTimeout(function(){var l=document.getElementById("dnLoader");if(l){l.classList.add("dn-hidden");setTimeout(function(){l.style.display="none"},500)}},700)});</script><script>window.addEventListener("load",function(){setTimeout(function(){var l=document.getElementById("dnLoader");if(l){l.classList.add("dn-hidden");setTimeout(function(){l.style.display="none"},500)}},700)});</script></body>
 </html>
