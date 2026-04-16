@@ -12,9 +12,8 @@
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/layout.css">
 </head>
-<body><div id="dnLoader"><div class="dn-lname">DARKNOVA</div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div></div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div>
-
-<div class="grid-bg"></div>
+<body>
+<div id="dnLoader"><div class="dn-lname">DARKNOVA</div><div class="dn-lsub">LOADING...</div><div class="dn-lbar"></div></div><div class="grid-bg"></div>
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
@@ -198,11 +197,12 @@
 <script>
 (function(){
   function hide(){var l=document.getElementById("dnLoader");if(l){l.classList.add("dn-hidden");setTimeout(function(){if(l.parentNode)l.parentNode.removeChild(l);},500);}}
-  document.addEventListener("DOMContentLoaded",function(){setTimeout(hide,1800);});
-  window.addEventListener("load",function(){setTimeout(hide,400);});
-  setTimeout(hide,3500);
+  document.addEventListener("DOMContentLoaded",function(){setTimeout(hide,1600);});
+  window.addEventListener("load",function(){setTimeout(hide,300);});
+  setTimeout(hide,3000);
 })();
 </script>
 </body>
 </html>
+
 

@@ -6,9 +6,10 @@
   --accent:#7c5cfc; --accent2:#a78bfa; --accent3:#c4b5fd;
   --glow:rgba(124,92,252,0.35); --glow2:rgba(124,92,252,0.12);
   --cyan:#22d3ee; --gold:#fbbf24; --success:#34d399; --danger:#f87171;
-  --font-display:defined 'Bebas Neue' ? 'Bebas Neue' : "",cursive;
-  --font-mono:defined 'Space Mono' ? 'Space Mono' : "",monospace;
-  --font-body:defined 'DM Sans' ? 'DM Sans' : "",sans-serif;
+  --font-display:'Bebas Neue',cursive;
+  --font-mono:'Space Mono',monospace;
+  --font-body:'DM Sans',sans-serif;
   --ease:cubic-bezier(0.4,0,0.2,1);
   --radius:14px; --radius2:22px;
 }
+
